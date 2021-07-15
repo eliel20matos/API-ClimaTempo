@@ -21,6 +21,7 @@ import br.com.eliel.repository.AnemometroRepository;
 @RestController
 @RequestMapping("/api/v1/vel-vento")
 public class AnemometroResource {
+	
 	private List<Anemometro> anemometro = new ArrayList<>();
 	
 	@Autowired
