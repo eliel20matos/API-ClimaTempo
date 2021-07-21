@@ -24,6 +24,8 @@ public class Higrometro {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
+	@NotNull
+	private String Coordenadas;
 	
 	@NotNull(message = "A umidade não pode ser nula!")
 	private String umidade;
