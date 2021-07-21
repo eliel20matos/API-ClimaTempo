@@ -38,6 +38,13 @@ public class Anemometro {
 	        columnDefinition = "varchar(36) not null")
     private String uuid;
 	
+	@NotNull
+	private String lat;
+	
+	@NotNull
+	private String longi;
+	
+	
 	
 	public Anemometro() {
 		UUID uuid_ = UUID.randomUUID();
@@ -77,6 +84,31 @@ public class Anemometro {
 	public String getUuid() {
 		return uuid;
 	}
+
+
+
+	public String getLat() {
+		return lat;
+	}
+
+
+
+	public void setLat(String lat) {
+		this.lat = lat;
+	}
+
+
+
+	public String getLongi() {
+		return longi;
+	}
+
+
+
+	public void setLongi(String longi) {
+		this.longi = longi;
+	}
+	
 	
 	
 }

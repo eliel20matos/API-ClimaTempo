@@ -39,6 +39,12 @@ public class Higrometro {
 	        columnDefinition = "varchar(36) not null")
     private String uuid;
 	
+	@NotNull
+	private String lat;
+	
+	@NotNull
+	private String longi;
+	
 	
 	public Higrometro() {
 		UUID uuid_ = UUID.randomUUID();

@@ -39,6 +39,12 @@ public class Termometro {
 	        columnDefinition = "varchar(36) not null")
     private String uuid;
 	
+	@NotNull
+	private String lat;
+	
+	@NotNull
+	private String longi;
+	
 	
 	public Termometro() {
 		UUID uuid_ = UUID.randomUUID();

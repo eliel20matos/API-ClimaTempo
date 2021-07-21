@@ -38,6 +38,12 @@ public class Pluviometro {
 	        columnDefinition = "varchar(36) not null")
     private String uuid;
 	
+	@NotNull
+	private String lat;
+	
+	@NotNull
+	private String longi;
+	
 	
 	public Pluviometro() {
 		UUID uuid_ = UUID.randomUUID();
