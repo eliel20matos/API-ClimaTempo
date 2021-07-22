@@ -48,13 +48,6 @@ public class Anemometro {
 	@NotNull
 	private String longi;
 	
-	
-	
-	public Anemometro() {
-		UUID uuid_ = UUID.randomUUID();
-		this.uuid = uuid_.toString(); 
-	}
-	
 	@Lazy
 	
 	@JsonIgnore
@@ -63,6 +56,25 @@ public class Anemometro {
 	private Estacao estacao;
 	
 	
+	
+	public Anemometro() {
+		UUID uuid_ = UUID.randomUUID();
+		this.uuid = uuid_.toString(); 
+	}
+	
+	
+
+	public Estacao getEstacao() {
+		return estacao;
+	}
+
+
+
+	public void setEstacao(Estacao estacao) {
+		this.estacao = estacao;
+	}
+
+
 
 	public Long getId() {
 		return id;
