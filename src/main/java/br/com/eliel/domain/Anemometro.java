@@ -16,6 +16,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import org.springframework.context.annotation.Lazy;
+
 @Entity
 public class Anemometro {
 	
@@ -50,6 +54,13 @@ public class Anemometro {
 		UUID uuid_ = UUID.randomUUID();
 		this.uuid = uuid_.toString(); 
 	}
+	
+	@Lazy
+	
+	@JsonIgnore
+	@ManyToOne()
+	@JoinColumn(name = "estacao_id")
+	private Estacao estacao;
 	
 	
 
